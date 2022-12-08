@@ -350,10 +350,6 @@ summary {
   margin-left: 93px;
 }
 
-.navigation-list {
-  display: flex;
-}
-
 .navigation-link {
   font-family: "Roboto";
   font-weight: 500;
@@ -474,6 +470,12 @@ summary {
   margin-top: 30px;
 }
 
+.advantages {
+  background-color: var(--head-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container-advantages {
   display: flex;
   width: 1200px;
@@ -483,17 +485,11 @@ summary {
   margin-right: auto;
 }
 
-.advantages {
-  background-color: var(--head-background-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .advantages-hidden {
   display: none;
 }
 
-.advantages-lists {
+.advantages-list {
   list-style: none;
   width: 1200px;
   padding-left: 15px;
@@ -504,11 +500,11 @@ summary {
   margin-right: auto;
 }
 
-.advantages-list {
+.advantages-list__item {
   max-width: 270px;
 }
 
-.advantages-icon-style {
+.advantages-list__icon {
   width: 270px;
   height: 120px;
   background-color: var(--secondary-background-color);
@@ -519,7 +515,7 @@ summary {
   margin-bottom: 30px;
 }
 
-.advantages-list-title {
+.advantages-list__title {
   font-size: 14px;
   line-height: 1.1428;
   letter-spacing: 0.03em;
@@ -527,7 +523,7 @@ summary {
   margin-bottom: 10px;
 }
 
-.advantages-list-text {
+.advantages-list__text {
   color: var(--paragraps-color);
   font-size: 14px;
   line-height: 1.7142;
@@ -1230,7 +1226,7 @@ summary {
   margin-bottom: 50px;
 }
 
-.button-item {
+.button-list__item {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -1245,8 +1241,8 @@ summary {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-item:hover,
-.button-item:focus {
+.button-list__item:hover,
+.button-list__item:focus {
   background-color: var(--logo-hover-color);
   color: var(--white-logo-hero-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1256,7 +1252,7 @@ summary {
   display: none;
 }
 
-.projects-list {
+.projects {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -1265,7 +1261,7 @@ summary {
   row-gap: 30px;
 }
 
-.projects {
+.projects__list {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -1274,30 +1270,11 @@ summary {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects:hover {
+.projects__list:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-border {
-  border: 1px solid var(--card-background-color);
-  padding: 20px 24px;
-}
-
-.project-heading {
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-
-.project-description {
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.03em;
-  color: var(--paragraps-color);
-  margin-top: 4px;
-}
-
-.project-link {
+.projects__link {
   text-decoration: none;
   color: var(--heading-color);
 }
@@ -1307,11 +1284,11 @@ summary {
   overflow: hidden;
 }
 
-.project-image {
+.project-overlay__image {
   display: block;
 }
 
-.project-text {
+.project-overlay__text {
   text-decoration: none;
   font-size: 18px;
   line-height: 1.56;
@@ -1330,7 +1307,29 @@ summary {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-link:hover .project-text {
+.projects__link:hover .project-overlay__text {
   transform: translateY(-100%);
   opacity: 1;
+}
+
+.projects__border {
+  border: 1px solid var(--card-background-color);
+  padding: 20px 24px;
+}
+
+.projects__heading {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects__description {
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--paragraps-color);
+  margin-top: 4px;
 }/*# sourceMappingURL=main.css.map */
