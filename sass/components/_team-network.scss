@@ -20,23 +20,27 @@
     height: 100%;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            background-color: var(--logo-hover-color);
+        }
 }
 
 .social-network-logo {
     fill: var(--logos-color);
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    .social-network-link:hover & {
+            fill: var(--white-logo-hero-color);
+        }
+
+    .social-network-link:focus & {
+         fill: var(--white-logo-hero-color);
+        }
 }
 
-.social-network-link:hover,
-.social-network-link:focus {
-    background-color: var(--logo-hover-color);
-}
 
-.social-network-link:hover .social-network-logo {
-    fill: var(--white-logo-hero-color);
-}
 
-.social-network-link:focus .social-network-logo {
-    fill: var(--white-logo-hero-color);
-}

@@ -42,6 +42,12 @@
     justify-content: center;
     border: 1px solid var(--logos-color);
     border-radius: 4px;
+
+    &:hover,
+    &:focus {
+        border-color: var(--logo-hover-color);
+    }
+
 }
 
 .clients-logo {
@@ -50,17 +56,13 @@
     height: 60px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.clients-link:hover,
-.clients-link:focus {
-    border-color: var(--logo-hover-color);
-}
+    .clients-link:hover & {
+        fill: var(--logo-hover-color);
+    }
 
-.clients-link:hover .clients-logo {
-    fill: var(--logo-hover-color);
-}
+    .clients-link:focus & {
+        fill: var(--logo-hover-color);
+    }
 
-.clients-link:focus .clients-logo {
-    fill: var(--logo-hover-color);
 }
